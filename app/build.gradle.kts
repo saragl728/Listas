@@ -7,6 +7,10 @@ android {
     namespace = "com.example.listas"
     compileSdk = 33
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.listas"
         minSdk = 24
