@@ -16,6 +16,7 @@ class FilmAdapter(val filmList: List<Film>) : RecyclerView.Adapter<FilmViewHolde
     }
 
     override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = filmList[position]
+        holder.render(item)
     }
 }
