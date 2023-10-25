@@ -34,7 +34,7 @@
         android:id="@+id/FilmYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Año"
+        android:text="Anyo"
         app:layout_constraintTop_toBottomOf="@id/FilmDirector"
         app:layout_constraintLeft_toRightOf="@id/FilmPhoto"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
