@@ -12,13 +12,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
-        val decoration = DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
+        //val decoration = DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.recycler.layoutManager = LinearLayoutManager(this)
         //binding.recycler.layoutManager = GridLayoutManager(this, 2)
         binding.recycler.adapter = FilmAdapter(FilmProvider.filmList)
-        binding.recycler.addItemDecoration(decoration)
+        //binding.recycler.addItemDecoration(decoration)
     }
 }
