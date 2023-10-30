@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //binding.recycler.layoutManager = LinearLayoutManager(this)
-        binding.recycler.layoutManager = GridLayoutManager(this, 2)
+        binding.recycler.layoutManager = LinearLayoutManager(this)
+        //binding.recycler.layoutManager = GridLayoutManager(this, 2)
         binding.recycler.adapter = FilmAdapter(FilmProvider.filmList)
         binding.recycler.addItemDecoration(decoration)
     }
