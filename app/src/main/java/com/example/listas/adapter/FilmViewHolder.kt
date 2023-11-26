@@ -8,7 +8,7 @@ import com.example.listas.Film
 import com.example.listas.databinding.ItemFilmBinding
 
 class FilmViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    val binding = ItemFilmBinding.bind(view)
+    var binding = ItemFilmBinding.bind(view)
     fun render(filmModel: Film){
         binding.FilmName.text = filmModel.title
         binding.FilmDirector.text = filmModel.director

@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.listas.Film
 import com.example.listas.R
 
-class FilmAdapter(val filmList: List<Film>) : RecyclerView.Adapter<FilmViewHolder>() {
+class FilmAdapter(var filmList: List<Film>) : RecyclerView.Adapter<FilmViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {
         val layoutInflater= LayoutInflater.from(parent.context)
         return FilmViewHolder(layoutInflater.inflate(R.layout.item_film, parent, false))
@@ -19,4 +19,10 @@ class FilmAdapter(val filmList: List<Film>) : RecyclerView.Adapter<FilmViewHolde
         val item = filmList[position]
         holder.render(item)
     }
+
+    fun actualizarPeliculas(listapelicula: List<Film>) {
+        this.filmList = listapelicula
+        notifyDataSetChanged()
+    }
+
 }

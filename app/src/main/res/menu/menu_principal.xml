@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/peliculas"
+        android:title="Películas" />
+    <item
+        android:id="@+id/anyadir"
+        android:title="Añadir Película" />
+    <item
+        android:id="@+id/datosApp"
+        android:title="App" />
+    <!--hacer que solo aparezca en la activity de la lista de películas-->
+    <item
+        android:id="@+id/buscar"
+        android:title="Buscar"
+        android:icon="@drawable/buscar"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/salir"
+        android:title="Salir"
+        android:icon="@drawable/salir"
+        app:showAsAction="always"/>
+</menu>
